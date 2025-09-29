@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>{% block titulo %} {% endblock %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static', filename='/css/style.css')}}" />
+	</head>
+    <body class="is-preload">
+        <!-- Sidebar -->
+                <nav class="navbar">
+                <ul class="navbar-links">
+                    <li><a href="{{url_for('index')}}">Homepage</a></li>
+                    <li><a href="{{url_for('registration')}}">Registrarse</a></li>
+                </ul>
+                <ul class="navbar-social-icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+                </ul>
+                </nav>
+            <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Main -->
+                <div id="main">
+                    <div class="inner">
+
+                        <!-- Header -->
+                            <header id="header">
+                                <a href="{{url_for('index')}}" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+                            </header>
+                            {% block content %}{% endblock %}
+                    
+                    </div>
+                    
+        </div>
+        
+	</body>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='/js/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='/js/browser.min.js')}}"></script>
+    <script src="{{url_for('static', filename='/js/breakpoints.min.js')}}"></script>
+    <script src="{{url_for('static', filename='/js/util.js')}}"></script>
+    <script src="{{url_for('static', filename='/js/main.js')}}"></script>
+</html>
