@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+
+{% block titulo %} inicio - Evento MTB {% endblock %}
+
+{% block content %}
+<!-- Banner -->
+<section id="banner">
+	<div class="content">
+		<header>
+			<h1>{{ info_evento[1].nombre }}</h1>
+			<p>{{ info_evento[1].organizador }}</p>
+		</header>
+		<p>{{ info_evento[1].descripcion}}</p>
+		<h3>Informacion importante: </h3>
+		<ul class="lista_info">
+			<li><p>Fecha: {{ info_evento[1].fecha }}</p></li>
+			<li><p>Lugar: {{ info_evento[1].lugar }}</p></li>
+			<li><p>Tipo de carrera: {{ info_evento[1].tipo_carrera }}</p></li>
+		</ul>
+		<h3>Coste por Modalidad: </h3>
+		<ul class="lista_info">
+			<li><p>{{ info_evento[1].modalidad_costo[1].nombre }}: {{ info_evento[1].modalidad_costo[1].valor }}$</p></li>
+			<li><p>{{ info_evento[1].modalidad_costo[2].nombre }}: {{ info_evento[1].modalidad_costo[2].valor }}$</p></li>
+		</ul>
+		<ul class="actions">
+			<li><a href="{{ url_for('registration') }}" class="button big">Registrarse</a></li>
+		</ul>
+	</div>
+	<span class="image object">
+		<img src="images/pic10.jpg" alt="" />
+	</span>
+</section>
+
+<!-- Section mapa -->
+<section>
+	<header class="major">
+		<h2>Mapa</h2>
+	</header>
+	<div class="contenedor">
+		<div class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d13138.002885639531!2d-58.39994318312052!3d-34.59149780722716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e2!4m3!3m2!1d-34.589664!2d-58.381252999999994!4m3!3m2!1d-34.595430199999996!2d-58.381999699999994!4m3!3m2!1d-34.603558899999996!2d-58.3811159!4m3!3m2!1d-34.6030643!2d-58.3705158!4m3!3m2!1d-34.617545799999995!2d-58.3687134!4m3!3m2!1d-34.6178284!2d-58.3888836!4m3!3m2!1d-34.6091045!2d-58.389141099999996!4m3!3m2!1d-34.609598999999996!2d-58.405963899999996!4m5!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta!3m2!1d-34.5873825!2d-58.3972762!4m3!3m2!1d-34.5848381!2d-58.399857399999995!5e0!3m2!1ses!2sar!4v1758782207295!5m2!1ses!2sar" 
+				width="600"
+				height="450" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</div>
+		<div class="puntos">
+			<h3 class="info" id="Fh3">Inicio en: Carlos pelegrini 1584 - 1502</h3>
+			<h3 class="info">Final en: 2600 - 2512</h3>
+			<div class="info">
+				<h3>Puntos de hidratacion: </h3>
+				<ul>
+					<li>punto A</li>
+					<li>punto B</li>
+				</ul>
+			</div>
+			
+		</div>
+
+	</div>
+</section>
+
+<!-- Section -->
+<section>
+	<header class="major">
+		<h2>Auspiciantes</h2>
+	</header>
+	<div class="posts">
+		<article>
+			<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+			<h3>Interdum aenean</h3>
+			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			<ul class="actions">
+				<li><a href="#" class="button">More</a></li>
+			</ul>
+		</article>
+		<article>
+			<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+			<h3>Nulla amet dolore</h3>
+			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			<ul class="actions">
+				<li><a href="#" class="button">More</a></li>
+			</ul>
+		</article>
+		<article>
+			<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+			<h3>Tempus ullamcorper</h3>
+			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			<ul class="actions">
+				<li><a href="#" class="button">More</a></li>
+			</ul>
+		</article>
+		<article>
+			<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+			<h3>Sed etiam facilis</h3>
+			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			<ul class="actions">
+				<li><a href="#" class="button">More</a></li>
+			</ul>
+		</article>
+		<article>
+			<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+			<h3>Feugiat lorem aenean</h3>
+			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			<ul class="actions">
+				<li><a href="#" class="button">More</a></li>
+			</ul>
+		</article>
+		<article>
+			<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+			<h3>Amet varius aliquam</h3>
+			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			<ul class="actions">
+				<li><a href="#" class="button">More</a></li>
+			</ul>
+		</article>
+	</div>
+</section>
+
+<!-- Section -->
+<section>
+	<header class="major">
+		<h2>Kit de carrerea recomendado</h2>
+	</header>
+	<div class="features">
+		<article>
+			<span class="icon fa-gem"></span>
+			<div class="content">
+				<h3>Portitor ullamcorper</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			</div>
+		</article>
+		<article>
+			<span class="icon solid fa-paper-plane"></span>
+			<div class="content">
+				<h3>Sapien veroeros</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			</div>
+		</article>
+		<article>
+			<span class="icon solid fa-rocket"></span>
+			<div class="content">
+				<h3>Quam lorem ipsum</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			</div>
+		</article>
+		<article>
+			<span class="icon solid fa-signal"></span>
+			<div class="content">
+				<h3>Sed magna finibus</h3>
+				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+			</div>
+		</article>
+	</div>
+</section>
+
+<!-- Section -->
+<section>
+	<header class="major">
+		<h2>Informacion de interes (aca van pdf's)</h2>
+	</header>
+	<a href="#" download="#.pdf">
+      Descargar deslinde (PDF)
+    </a>
+</section>
+
+
+{% endblock %}
