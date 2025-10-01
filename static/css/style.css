@@ -2305,11 +2305,6 @@ button,
   flex-direction: row;
 }
 
-@media (max-width: 800px) {
-  .contenedor {
-    flex-direction: column;
-  }
-}
 
 .info{
   margin-left: 2.5rem;
@@ -2327,4 +2322,90 @@ button,
 
 #Fh3 {
   margin-top: 2.5em;
+}
+
+
+footer a {
+  color: #fff;
+  font-weight:900;
+}
+
+.footer-social-icons a {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content:left;
+}
+
+.footer-social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.interes-link > h4{
+  color: #ffffff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.interes-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.interes-link > h4 {
+  margin: 0;
+}
+
+.interes-link > p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .contenedor {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 675px) {
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .interes-link {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.patrocinador2 > a > img{
+  background-color: black;
+}
+
+.form {
+  padding-top: 5rem;
+  border-radius: 5px;
+}
+
+.features > article > img {
+  width: 10em;
+  max-height: 133px;
+}
+
+.features > article > div > a > h3 {
+  color: #f56a6a;
 }
