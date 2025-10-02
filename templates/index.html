@@ -3,6 +3,7 @@
 {% block titulo %} inicio - Evento MTB {% endblock %}
 
 {% block content %}
+
 <!-- Banner -->
 <section id="banner">
 	<div class="content">
@@ -27,41 +28,67 @@
 		</ul>
 	</div>
 	<span class="image object">
-		<img src="images/pic10.jpg" alt="" />
+		<img src="{{ url_for('static', filename='images/MTB_start_photo.jpg', _external=True) }}" alt="" />
 	</span>
 </section>
 
-<!-- Section mapa -->
+
 <section>
 	<header class="major">
-		<h2>Mapa</h2>
+		<h2>Mapa - Modalidad 80km</h2>
 	</header>
 	<div class="contenedor">
 		<div class="mapa">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d13138.002885639531!2d-58.39994318312052!3d-34.59149780722716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e2!4m3!3m2!1d-34.589664!2d-58.381252999999994!4m3!3m2!1d-34.595430199999996!2d-58.381999699999994!4m3!3m2!1d-34.603558899999996!2d-58.3811159!4m3!3m2!1d-34.6030643!2d-58.3705158!4m3!3m2!1d-34.617545799999995!2d-58.3687134!4m3!3m2!1d-34.6178284!2d-58.3888836!4m3!3m2!1d-34.6091045!2d-58.389141099999996!4m3!3m2!1d-34.609598999999996!2d-58.405963899999996!4m5!1s0x95bcca99c609fc2f%3A0x392ca99351808a75!2sRecoleta!3m2!1d-34.5873825!2d-58.3972762!4m3!3m2!1d-34.5848381!2d-58.399857399999995!5e0!3m2!1ses!2sar!4v1758782207295!5m2!1ses!2sar" 
-				width="600"
-				height="450" 
-				style="border:0;" 
-				allowfullscreen="" 
-				loading="lazy" 
-				referrerpolicy="no-referrer-when-downgrade">
-			</iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m56!1m12!1m3!1d105068.68303265466!2d-58.565266654150555!3d-34.61942310998704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m41!3e2!4m3!3m2!1d-34.5779496!2d-58.4265228!4m3!3m2!1d-34.5952087!2d-58.3825667!4m3!3m2!1d-34.6219118!2d-58.365572199999995!4m3!3m2!1d-34.648465099999996!2d-58.4641059!4m3!3m2!1d-34.6350482!2d-58.530023799999995!4m3!3m2!1d-34.6128201!2d-58.523015099999995!4m3!3m2!1d-34.5333501!2d-58.4647375!4m3!3m2!1d-34.5630382!2d-58.415847199999995!4m3!3m2!1d-34.630582499999996!2d-58.3537058!4m3!3m2!1d-34.683675!2d-58.557370199999994!5e0!3m2!1ses!2sar!4v1759206666359!5m2!1ses!2sar" 
+			width="600" 
+			height="450" 
+			style="border:0;" 
+			allowfullscreen="" 
+			loading="lazy" 
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 		</div>
 		<div class="puntos">
-			<h3 class="info" id="Fh3">Inicio en: Carlos pelegrini 1584 - 1502</h3>
+			<h3 class="info" id="Fh3">Inicio en: Av. Santa Fe 4682 - 4699</h3>
 			<h3 class="info">Final en: 2600 - 2512</h3>
 			<div class="info">
-				<h3>Puntos de hidratacion: </h3>
-				<ul>
-					<li>punto A</li>
-					<li>punto B</li>
-				</ul>
+				<h3>Los puntos de hidratacion son los puntos blancos en el mapa </h3>
 			</div>
 			
 		</div>
 
 	</div>
+
 </section>
+
+
+<section>
+	<header class="major">
+		<h2>Mapa - Modalidad 30km</h2>
+	</header>
+	<div class="contenedor">
+		<div class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d105086.9185505999!2d-58.51554930158707!3d-34.60501607675376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e2!4m3!3m2!1d-34.5779496!2d-58.4265228!4m3!3m2!1d-34.5952087!2d-58.3825667!4m3!3m2!1d-34.6219118!2d-58.365572199999995!4m3!3m2!1d-34.648465099999996!2d-58.4641059!4m3!3m2!1d-34.6350482!2d-58.530023799999995!4m3!3m2!1d-34.6128201!2d-58.523015099999995!5e0!3m2!1ses!2sar!4v1759206427013!5m2!1ses!2sar" 
+			width="600" 
+			height="450" 
+			style="border:0;" 
+			allowfullscreen="" 
+			loading="lazy" 
+			referrerpolicy="no-referrer-when-downgrade">
+
+			</iframe>
+		</div>
+		<div class="puntos">
+			<h3 class="info" id="Fh3">Inicio en: Av. Santa Fe 4682 - 4699</h3>
+			<h3 class="info">Final en: 2600 - 2512</h3>
+			<div class="info">
+				<h3>Los puntos de hidratacion son los puntos blancos en el mapa </h3>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
 
 <!-- Section -->
 <section>
@@ -70,52 +97,12 @@
 	</header>
 	<div class="posts">
 		<article>
-			<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-			<h3>Interdum aenean</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
+			<a href="https://www.scottstorepilar.com.ar/" class="image"><img src="{{ url_for('static', filename='images/patrocinador1.webp') }}" alt="" /></a>
+			<h2> {{ info_evento[1]["Auspiciantes"][0]}}</h2>
 		</article>
-		<article>
-			<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-			<h3>Nulla amet dolore</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-			<h3>Tempus ullamcorper</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-			<h3>Sed etiam facilis</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-			<h3>Feugiat lorem aenean</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-			<h3>Amet varius aliquam</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
+		<article class="patrocinador2">
+			<a href="https://www.trekbikesargentina.com/bicicletas/mtb/" class="image"><img src="{{ url_for('static', filename='images/patrocinador2.webp') }}" alt="" /></a>
+			<h2> {{ info_evento[1]["Auspiciantes"][1]}}</h2>
 		</article>
 	</div>
 </section>
@@ -127,44 +114,30 @@
 	</header>
 	<div class="features">
 		<article>
-			<span class="icon fa-gem"></span>
+			<img src="{{ url_for('static', filename='images/kit1.webp') }}" alt=""/>
 			<div class="content">
-				<h3>Portitor ullamcorper</h3>
-				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<a href="https://www.mercadolibre.com.ar/casco-raleigh-regulable-para-ciclismo-color-azul-talle-54-58/p/MLA46704349?product_trigger_id=MLA46713249&picker=true&has_official_store=false&highlight=true&headerTopBrand=true&quantity=1">
+					<h3>Casco Raleigh Regulable</h3>
+				</a>
 			</div>
 		</article>
 		<article>
-			<span class="icon solid fa-paper-plane"></span>
+			<img src="{{ url_for('static', filename='images/kit2.webp') }}" alt=""/>
 			<div class="content">
-				<h3>Sapien veroeros</h3>
-				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<a href="https://www.mercadolibre.com.ar/botella-de-agua-deportiva-everlast-1-litro-gym-manija-color-azul/p/MLA42246508?has_official_store=false&highlight=true&headerTopBrand=true#polycard_client=search-nordic&search_layout=grid&position=3&type=product&tracking_id=dd75085e-9367-490a-85de-0f58b5c0546e&wid=MLA1951363412&sid=search">
+					<h3>Botella De Agua Deportiva Everlast </h3>
+				</a>
 			</div>
 		</article>
 		<article>
-			<span class="icon solid fa-rocket"></span>
+			<img src="{{ url_for('static', filename='images/kit3.webp') }}" alt=""/>
 			<div class="content">
-				<h3>Quam lorem ipsum</h3>
-				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			</div>
-		</article>
-		<article>
-			<span class="icon solid fa-signal"></span>
-			<div class="content">
-				<h3>Sed magna finibus</h3>
-				<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+				<a href="https://articulo.mercadolibre.com.ar/MLA-2135779324-lentes-rockbros-fotocromatico-ultralight-deportivo-_JM?searchVariation=188596340915#is_advertising=true&searchVariation=188596340915&backend_model=search-backend&position=20&search_layout=grid&type=pad&tracking_id=30bc6910-78f4-4f9c-8c72-43a7c7072363&ad_domain=VQCATCORE_LST&ad_position=20&ad_click_id=ZmM4NDA5OTUtZjMwZC00MzczLWJjNGEtYjU2NDMwMDBmN2E5">
+					<h3>Lentes Rockbros Fotocromatico Ultralight Deportivo</h3>
+				</a>
 			</div>
 		</article>
 	</div>
-</section>
-
-<!-- Section -->
-<section>
-	<header class="major">
-		<h2>Informacion de interes (aca van pdf's)</h2>
-	</header>
-	<a href="#" download="#.pdf">
-      Descargar deslinde (PDF)
-    </a>
 </section>
 
 
