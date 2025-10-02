@@ -16,7 +16,7 @@ info_evento = {
             1: {"nombre": "Corta", "valor": "100"},
             2: {"nombre": "Larga", "valor": "200"}
         },
-        "Auspiciantes": ["Ausp1", "Ausp2", "AuspN"]
+        "Auspiciantes": ["Scott", "TREK"]
     }
 }
 

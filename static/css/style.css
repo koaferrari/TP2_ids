@@ -2408,4 +2408,10 @@ footer {
 
 .features > article > div > a > h3 {
   color: #f56a6a;
+
+}
+
+.posts > article > img {
+  width: 100%;
+
 }
