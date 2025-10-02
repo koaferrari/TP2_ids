@@ -5,6 +5,7 @@
 {% block content %}
 <h3>Form</h3>
 
+<<<<<<< Updated upstream
 <form method="post" action="#">
     <div class="row gtr-uniform">
         <div class="col-6 col-12-xsmall">
@@ -19,4 +20,54 @@
         </div>
     </div>
 </form>
+=======
+<div class="form">
+    <h3>Formulario</h3>
+
+    <form method="post" action="#">
+        <div class="row gtr-uniform">
+            <div class="col-6 col-12-xsmall">
+                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre" required/>
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" required/>
+            </div>
+            <div class="col-6 col-12-xsmall">
+                <label for="modo">elija un modo de carrera: </label>
+                <select name="modo">
+                    <option>corto (30km)</option>
+                    <option>largo (80km)</option>
+                </select>
+            </div>
+            <!-- Break -->
+            <div class="col-12">
+                <input type="submit" value="enviar solicitud" class="primary" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<h2>Animate a venir y ser parte de esto!</h2>
+<div class="posts">
+		<article>
+			<img src="{{ url_for('static', filename='images/MTB-gallery.webp', _external=True)}}" alt="">
+		</article>
+        <article>
+			<img src="{{ url_for('static', filename='images/MTB-gallery2.webp', _external=True)}}" alt="">
+		</article>
+        <article>
+			<img src="{{ url_for('static', filename='images/MTB-gallery3.webp', _external=True)}}" alt="">
+		</article>
+        <article>
+			<img src="{{ url_for('static', filename='images/MTB-gallery4.jpg', _external=True)}}" alt="">
+		</article>
+        <article>
+			<img src="{{ url_for('static', filename='images/MTB-gallery5.webp', _external=True)}}" alt="">
+		</article>
+        <article>
+			<img src="{{ url_for('static', filename='images/MTB-gallery6.webp', _external=True)}}" alt="">
+		</article>
+	</div>
+
+>>>>>>> Stashed changes
 {% endblock %}
