@@ -1,56 +1,53 @@
 {% extends 'base.html' %}
 
-{% block titulo %} registro - Evento MTB {% endblock %}
+{% block titulo %} Registro - Evento MTB {% endblock %}
 
 {% block content %}
 <div class="form">
     <h3>Formulario</h3>
 
-    <form method="post" action="#">
+    <form method="post" action="{{ url_for('registration') }}">
         <div class="row gtr-uniform">
             <div class="col-6 col-12-xsmall">
-                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nombre" required/>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
             </div>
             <div class="col-6 col-12-xsmall">
-                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" required/>
+                <input type="email" name="email" id="email" placeholder="Correo" required />
             </div>
             <div class="col-6 col-12-xsmall">
-                <label for="modo">elija un modo de carrera: </label>
-                <select name="modo">
-                    <option>corto (30km)</option>
-                    <option>largo (80km)</option>
+                <label for="modalidad">Elija un modo de carrera:</label>
+                <select name="modalidad" id="modalidad" required>
+                    <option value="Corta">Corto (30 km)</option>
+                    <option value="Larga">Largo (80 km)</option>
                 </select>
             </div>
-            <!-- Break -->
+            
             <div class="col-12">
-                <input type="submit" value="enviar solicitud" class="primary" />
-
+                <input type="submit" value="Enviar solicitud" class="primary" />
             </div>
         </div>
     </form>
 </div>
 
-<h2>Animate a venir y ser parte de esto!</h2>
+<h2>¡Animate a venir y ser parte de esto!</h2>
 <div class="posts">
-		<article>
-			<img src="{{ url_for('static', filename='images/MTB-gallery.webp', _external=True)}}" alt="">
-		</article>
-        <article>
-			<img src="{{ url_for('static', filename='images/MTB-gallery2.webp', _external=True)}}" alt="">
-		</article>
-        <article>
-			<img src="{{ url_for('static', filename='images/MTB-gallery3.webp', _external=True)}}" alt="">
-		</article>
-        <article>
-			<img src="{{ url_for('static', filename='images/MTB-gallery4.jpg', _external=True)}}" alt="">
-		</article>
-        <article>
-			<img src="{{ url_for('static', filename='images/MTB-gallery5.webp', _external=True)}}" alt="">
-		</article>
-        <article>
-			<img src="{{ url_for('static', filename='images/MTB-gallery6.webp', _external=True)}}" alt="">
-		</article>
-	</div>
-
-
+    <article>
+        <img src="{{ url_for('static', filename='images/MTB-gallery.webp') }}" alt="Foto 1">
+    </article>
+    <article>
+        <img src="{{ url_for('static', filename='images/MTB-gallery2.webp') }}" alt="Foto 2">
+    </article>
+    <article>
+        <img src="{{ url_for('static', filename='images/MTB-gallery3.webp') }}" alt="Foto 3">
+    </article>
+    <article>
+        <img src="{{ url_for('static', filename='images/MTB-gallery4.jpg') }}" alt="Foto 4">
+    </article>
+    <article>
+        <img src="{{ url_for('static', filename='images/MTB-gallery5.webp') }}" alt="Foto 5">
+    </article>
+    <article>
+        <img src="{{ url_for('static', filename='images/MTB-gallery6.webp') }}" alt="Foto 6">
+    </article>
+</div>
 {% endblock %}
