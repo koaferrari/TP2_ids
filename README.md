@@ -13,3 +13,4 @@ Se necesita tener python3 instalado junto con venv para la creacion de un entorn
 
 ## Como levantar el proyecto
 - debera ejecutar `crear_ve.bash`, este creara una carpeta llamada "TP2-IDS", una ves dentro debera ejecutar: `source .venv/bin/activate` y ejecutar app.py
+
