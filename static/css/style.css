@@ -2305,11 +2305,6 @@ button,
   flex-direction: row;
 }
 
-@media (max-width: 800px) {
-  .contenedor {
-    flex-direction: column;
-  }
-}
 
 .info{
   margin-left: 2.5rem;
@@ -2413,8 +2408,10 @@ footer {
 
 .features > article > div > a > h3 {
   color: #f56a6a;
+
 }
 
 .posts > article > img {
   width: 100%;
+
 }
